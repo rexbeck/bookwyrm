@@ -1,0 +1,15 @@
+{
+    "include": ["src/**/*"],
+    "compilerOptions": {
+        "typeRoots": ["src/@types", "node_modules/@types"],
+        "outDir": "out",
+        // enable top-level await and import/export syntax
+        "lib": [
+            "ES2023"
+        ],
+        "target": "es2020",
+        "moduleResolution": "node16",
+        "module": "node16",
+        "resolveJsonModule": true
+    }
+}

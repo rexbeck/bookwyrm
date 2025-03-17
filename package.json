@@ -1,0 +1,32 @@
+{
+  "name": "bookwyrm",
+  "version": "1.0.0",
+  "description": "A discord bot for Dungeons and Dragons players.",
+  "homepage": "https://github.com/rexbeck/bookwyrm#readme",
+  "scripts": {
+    "build": "rm -rf out && mkdir out && tsc",
+    "start": "cd out/src && node index.js",
+    "deploy:commands": "cd out/src && node deploy-commands.js"
+  },
+  "bugs": {
+    "url": "https://github.com/rexbeck/bookwyrm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexbeck/bookwyrm.git"
+  },
+  "license": "ISC",
+  "author": "Rex Beck",
+  "type": "commonjs",
+  "main": "index.ts",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "discord.js": "^14.18.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "typescript": "^5.8.2"
+  }
+}
